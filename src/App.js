@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Header from "./Header";
+import Welcome from "./Welcome";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  return(
+<div>
+<Welcome color= "red" />
+
+
+ <Header color= "blue" text="hello"/>  
+
+ {/* {new Array(10).fill(0).map((_, i) => {
+   console.log(i)
+ return i % 2==0 ?<Helloworld color= "pink"/> :<Helloworld color= "blue"/>
+ }
+ 
+  )}
+   */}
+</div>
+  )
+};
+ 
 
 export default App;
