@@ -1,15 +1,23 @@
 import React from "react";
 import './App.css';
-import Header from "./Header";
-import Welcome from "./Welcome";
+// import Header from "./Header";
+// import Welcome from "./Welcome";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import Home from "./Home";
+// import Contactus from "./Contactus";
+// import About from "./About";
+import Navbar from "./Navbar";
+
 
 function App() {
   return(
 <div>
-<Welcome color= "red" />
-
-
- <Header color= "blue" text="hello"/>  
+<Router>
+  <Navbar />
+  </Router>
+ {/* <Home />
+ <Contactus />
+ <About /> */}
 
  {/* {new Array(10).fill(0).map((_, i) => {
    console.log(i)

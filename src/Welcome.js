@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import './Welcome.css';
 export class Welcome extends Component {
 
     constructor(){
@@ -17,7 +17,7 @@ changeMessage(){
 
     render() {
         return (
-            <div style={{color: this.props.color}}>
+            <div style={{color: this.props.color, textAlign:"center"}}>
                 <h1>{this.state.message}</h1>
                 <button onClick={()=> this.changeMessage()}>Subscribe</button>
             </div>
